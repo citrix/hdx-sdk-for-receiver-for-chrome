@@ -1,0 +1,13 @@
+site_name: HDX SDK for Citrix Receiver for Chrome
+site_description: Reference guide for HDX SDK for Citrix Receiver for Chrome
+theme_dir: citrix-sdk
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+     anchorlink: True
+
+pages:
+- Overview: index.md
+- Capabilities: capabilities.md
