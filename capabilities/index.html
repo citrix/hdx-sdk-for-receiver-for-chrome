@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Capabilities - HDX SDK for Citrix Receiver for Chrome</title>
+     
+    <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png"> 
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link rel="stylesheet" href="../css/override.css" type="text/css" />
+    <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" /> 
+    <script>
+      // Current page data
+      var mkdocs_page_name = "Capabilities";
+      var mkdocs_page_input_path = "capabilities.md";
+      var mkdocs_page_url = "/capabilities/";
+
+    </script>
+    
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/highlight.pack.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/custom.js"></script>  
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+    <div class="header-top">
+      
+        <div class="header-top-left">
+          <a href="http://citrix.github.io" class="logo-position"><img height="60" src="../img/citrixlogoblack.png" target="_blank" class="logo-citrix"><span style="color:#000;font-size: 20px;position: relative;top:4px;left:20px;">Developer Documentation</span></a>
+        </div>
+        <div class="header-top-right">
+          <ul>
+
+            <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+             <ul class="header-elements">
+              <li class="list-inline support">
+                <input name="q" id="txtName" type="text" placeholder="Search SDKs" class="searchdocs">
+                <a class="fa fa-search errspan"></a>
+              </li>
+             <li> <a href="javascript:void(0);" style="font-size: 22px;position: relative;left: -10px;top: 3px"><i class="fa fa-globe"></i></a></li>
+             </ul>
+            </form>
+
+          </ul>
+
+        </div>
+      
+    </div>
+    <div class="body">
+      <div class="wy-grid-for-nav">
+
+        
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+          <div class="wy-side-nav-search">
+            <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+          </div>
+
+          <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+            <ul class="current">
+              
+              
+    <li class="toctree-l1 ">
+        <a class="toctree-l1-a " href="..">Overview</a>
+		
+    </li>
+
+			  
+              
+    <li class="toctree-l1 current">
+        <a class="toctree-l1-a current" href="./">Capabilities</a>
+		
+            <ul style="margin-left: 0px;padding-left:15px;border-left: 1px solid #b2b2b2;">
+            
+                <li class="toctree-l3"><a href="#capabilities" style="padding:0px;position: relative;">&nbsp;Capabilities</a></li>
+                
+                    <li><a class="toctree-l4" href="#launching-a-session" style="padding:0px;position: relative;">Launching a session</a></li>
+                
+                    <li><a class="toctree-l4" href="#hide-a-session" style="padding:0px;position: relative;">Hide a session</a></li>
+                
+                    <li><a class="toctree-l4" href="#show-a-session" style="padding:0px;position: relative;">Show a session</a></li>
+                
+                    <li><a class="toctree-l4" href="#disconnect-the-session" style="padding:0px;position: relative;">Disconnect the session</a></li>
+                
+                    <li><a class="toctree-l4" href="#launching-citrix-receiver-for-chrome-in-embed-mode" style="padding:0px;position: relative;">Launching Citrix Receiver for Chrome in embed mode</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+			  
+            </ul>
+          </div>
+          &nbsp;
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+           
+          <div class="wy-nav-content">
+            <div class="rst-content">
+              <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Capabilities</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+              <div role="main">
+                <div class="section">
+                <div class="file-format">
+                 <div class="leftAlign" style="float: left;visibility: hidden;">
+                  </div>
+                  <div class="rightAlign" style="float: right;">
+                      <span>Download full document:</span>
+                      <ul class="file-types">
+                        <li><a style="border: 1px solid #EE3D24;padding: 5px;font-size: 11px;color: #EE3D24;border-radius: 5px;font-weight: 700">PDF</a></li>
+                        <li><a style="border: 1px solid #2A579A;padding: 5px;font-size: 11px;color: #2A579A;border-radius: 5px;font-weight: 700">DOCX</a></li>
+                        <li><a style="border: 1px solid #495164;padding: 5px;font-size: 11px;color: #495164;border-radius: 5px;font-weight: 700">EMAIL</a></li>
+                        <li><a style="border: 1px solid #495164;padding: 5px;font-size: 11px;color: #495164;border-radius: 5px;font-weight: 700">PRINT</a></li>
+                      </ul>
+                  </div>
+                  </div>
+                   <h1 id="capabilities"><a class="toclink" href="#capabilities">Capabilities</a></h1>
+<h2 id="launching-a-session"><a class="toclink" href="#launching-a-session">Launching a session</a></h2>
+<ol>
+<li>Get the <code>receiverId</code></li>
+</ol>
+<div class="codehilite"><pre><span></span>var receiverId = &quot; haiffjcadagjlijoggckpgfnoeiflnem &quot;;
+</pre></div>
+
+
+<div class="admonition tip">
+<p class="admonition-title">Note<p>In this example, receiverId indicates the store version of Citrix Receiver for Chrome. If you are using a repackaged version of Citrix Receiver for Chrome, use the appropriate <code>receiverId</code>.</p>
+</p>
+</div>
+<p>&#50;.    Convert ICA data from <code>.ini</code> to <code>JSON</code> format.</p>
+<div class="admonition tip">
+<p class="admonition-title">Note<p>Typically, the ICA file is retrieved from StoreFront as an <code>.ini</code> file. Use the following helper function to convert an ICA <code>.ini</code> file to <code>JSON</code>.</p>
+</p>
+</div>
+<div class="codehilite"><pre><span></span><span class="c1">//Helper function to convert ica in INI format to JSON</span>
+<span class="kd">function</span> <span class="nx">convertICA_INI_TO_JSON</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+<span class="kd">var</span> <span class="nx">keyVals</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">dataArr</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;\r&#39;</span><span class="p">)</span><span class="o">==-</span><span class="mi">1</span><span class="p">){</span>
+<span class="nx">dataArr</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;\n&#39;</span><span class="p">);</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+<span class="nx">dataArr</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;\r\n&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">dataArr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">nameValue</span> <span class="o">=</span> <span class="nx">dataArr</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">nameValue</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">keyVals</span><span class="p">[</span><span class="nx">nameValue</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="nx">nameValue</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="c1">// This is required as LaunchReference will contain &#39;=&#39; as well. The above split(&#39;=&#39;,2) will not provide</span>
+<span class="c1">// the complete LaunchReference. Ideally, something like the following should be used generically as well</span>
+<span class="c1">// because there can be other variables that use the &#39;=&#39; character as part of the value.</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">nameValue</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">===</span> <span class="s2">&quot;LaunchReference&quot;</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">dataArr</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">dataArr</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">substr</span><span class="p">(</span><span class="nx">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nx">keyVals</span><span class="p">[</span><span class="nx">nameValue</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="nx">value</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">keyVals</span><span class="p">);</span><span class="c1">//to remove</span>
+<span class="k">return</span> <span class="nx">keyVals</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>&#51;.   Send the following message from the third-party Chrome app to Citrix Receiver for Chrome. </p>
+<div class="codehilite"><pre><span></span>chrome.runtime.sendMessage(receiverId , {&quot;method&quot; : &quot;launchSession&quot;,&quot;icaData&quot;:icaJSON,”sessionId”:sessionId},function(response) { });
+</pre></div>
+
+
+<p>where:</p>
+<ul>
+<li><code>icaJSON</code> indicates the ICA data in the form of JSON object created using the helper function.</li>
+<li><code>sessionId</code> is applicable in case of embedding receiver in appview. </li>
+<li><code>response: {"success":true,"sessionId":"Session1481109162565"}</code>  </li>
+</ul>
+<p>For further communication with the active session (for example, hide/unhide/disconnect) the Session ID needs to be stored.</p>
+<p>In case of error, response looks like below</p>
+<div class="codehilite"><pre><span></span>{&quot;success&quot;:false,&quot;error&quot;:&quot;Invalid params: no icadata&quot;}
+</pre></div>
+
+
+<h2 id="hide-a-session"><a class="toclink" href="#hide-a-session">Hide a session</a></h2>
+<ol>
+<li>Send the following message from the third-party Chrome app to Citrix Receiver for Chrome. </li>
+</ol>
+<div class="codehilite"><pre><span></span>chrome.runtime.sendMessage(receiverId, {&quot;method&quot; : &quot;hide&quot;,&quot;sessionId&quot;:sessionId},function(response) { })
+</pre></div>
+
+
+<p>where <code>sessionId</code> is applicable in case of embedding receiver in appview. For more details, see Embedding Receiver using appview.</p>
+<div class="admonition tip">
+<p class="admonition-title">Note<p>When a session is launched in embed view, the appview attribute must be set to hidden in the third-party app.</p>
+</p>
+</div>
+<p>In case of error, response looks like below:</p>
+<div class="codehilite"><pre><span></span>{&quot;success&quot;:false,&quot;error&quot;:&quot;Invalid sessionId&quot;}.
+</pre></div>
+
+
+<h2 id="show-a-session"><a class="toclink" href="#show-a-session">Show a session</a></h2>
+<ol>
+<li>Send the following message from the third-party Chrome app to Citrix Receiver for Chrome.</li>
+</ol>
+<div class="codehilite"><pre><span></span>chrome.runtime.sendMessage(receiverId, {&quot;method&quot; : &quot;show&quot;,&quot;sessionId&quot;:sessionId,function(response) { });
+</pre></div>
+
+
+<p>where, <code>sessionId</code> is applicable in case of embedding receiver in appview. </p>
+<div class="admonition tip">
+<p class="admonition-title">Note<p>When a session is launched in embed view, the appview attribute must be set to hidden in the third-party app.</p>
+</p>
+</div>
+<p>In case of error, response looks like below:</p>
+<div class="codehilite"><pre><span></span>{&quot;success&quot;:false,&quot;error&quot;:&quot;Invalid sessionId&quot;}.
+</pre></div>
+
+
+<h2 id="disconnect-the-session"><a class="toclink" href="#disconnect-the-session">Disconnect the session</a></h2>
+<p>Send the following message from the third-party Chrome app to Citrix Receiver for Chrome. </p>
+<div class="codehilite"><pre><span></span>chrome.runtime.sendMessage(receiverId, {&quot;method&quot; : &quot;disconnect&quot;,&quot;sessionId&quot;:sessionId},function(response) { });
+</pre></div>
+
+
+<p>where <code>sessionId</code> is applicable in case of embedding receiver in appview. </p>
+<p>In case of error, response looks like below:</p>
+<div class="codehilite"><pre><span></span>{&quot;success&quot;:false,&quot;error&quot;:&quot;Invalid sessionId&quot;}.
+</pre></div>
+
+
+<h2 id="launching-citrix-receiver-for-chrome-in-embed-mode"><a class="toclink" href="#launching-citrix-receiver-for-chrome-in-embed-mode">Launching Citrix Receiver for Chrome in embed mode</a></h2>
+<p>A third-party app can be embedded to Citrix Receiver for Chrome using the appview attribute. </p>
+<p>Follow the procedure below:</p>
+<ol>
+<li>Create an appview element in the third-party app. Also, register the chrome.runtime.onMessageExternal listener in the background page of the app to receive status of embedding.
+For example:</li>
+</ol>
+<div class="codehilite"><pre><span></span>var appview = document.createElement(&quot;appview&quot;);
+appview.id = &quot;appView&quot;;
+// Appends the element to the document body.
+document.body.appendChild(appview);
+</pre></div>
+
+
+<p>&#50;.  Call connect method</p>
+<p>Call connect method can be achieved by passing the receiver id. Citrix Receiver for Chrome checks if the sender app is whitelisted and sends a message with embed state success. sessionId is posted to the sender app. Session id needs to be stored to do further interactions with the session. </p>
+<p>For example, </p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">appToEmbed</span> <span class="o">=</span> <span class="nx">receiverId</span><span class="p">;</span><span class="c1">//Get the citrix receiver id</span>
+
+<span class="kd">function</span> <span class="nx">embedCallback</span><span class="p">(</span><span class="nx">response</span><span class="p">){</span>
+<span class="c1">//response value will be true if embedding is allowed otherwise value will be false</span>
+<span class="p">}</span>
+
+<span class="c1">// Connects the appview to appToEmbed.</span>
+<span class="c1">// appToEmbed is the id of the Citrix Receiver for Chrome.</span>
+
+<span class="nx">appview</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">appToEmbed</span><span class="p">,</span><span class="nx">data</span><span class="p">,</span><span class="nx">embedCallback</span><span class="p">);</span>
+</pre></div>
+
+
+<div class="admonition tip">
+<p class="admonition-title">Note<p>When a third-party app is launched in KIOSK mode, the session cannot be launched in embed mode.</p>
+</p>
+</div> 
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+    <!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href=".."><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+  </body>
+
+</html>

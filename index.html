@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Reference guide for HDX SDK for Citrix Receiver for Chrome">  
+    <title>HDX SDK for Citrix Receiver for Chrome</title>
+     
+    <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png"> 
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="./css/highlight.css">
+    <link rel="stylesheet" href="./css/override.css" type="text/css" />
+    <link rel="stylesheet" href="./css/font-awesome.css" type="text/css" /> 
+    <script>
+      // Current page data
+      var mkdocs_page_name = "None";
+      var mkdocs_page_input_path = "index.md";
+      var mkdocs_page_url = "/";
+
+    </script>
+    
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="./js/highlight.pack.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/custom.js"></script>  
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+    <div class="header-top">
+      
+        <div class="header-top-left">
+          <a href="http://citrix.github.io" class="logo-position"><img height="60" src="./img/citrixlogoblack.png" target="_blank" class="logo-citrix"><span style="color:#000;font-size: 20px;position: relative;top:4px;left:20px;">Developer Documentation</span></a>
+        </div>
+        <div class="header-top-right">
+          <ul>
+
+            <form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+             <ul class="header-elements">
+              <li class="list-inline support">
+                <input name="q" id="txtName" type="text" placeholder="Search SDKs" class="searchdocs">
+                <a class="fa fa-search errspan"></a>
+              </li>
+             <li> <a href="javascript:void(0);" style="font-size: 22px;position: relative;left: -10px;top: 3px"><i class="fa fa-globe"></i></a></li>
+             </ul>
+            </form>
+
+          </ul>
+
+        </div>
+      
+    </div>
+    <div class="body">
+      <div class="wy-grid-for-nav">
+
+        
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+          <div class="wy-side-nav-search">
+            <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+          </div>
+
+          <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+            <ul class="current">
+              
+              
+    <li class="toctree-l1 current">
+        <a class="toctree-l1-a current" href=".">Overview</a>
+		
+            <ul style="margin-left: 0px;padding-left:15px;border-left: 1px solid #b2b2b2;">
+            
+                <li class="toctree-l3"><a href="#hdx-sdk-for-citrix-receiver-for-chrome" style="padding:0px;position: relative;">&nbsp;HDX SDK for Citrix Receiver for Chrome</a></li>
+                
+                    <li><a class="toctree-l4" href="#prerequisites" style="padding:0px;position: relative;">Prerequisites</a></li>
+                
+                    <li><a class="toctree-l4" href="#additional-references" style="padding:0px;position: relative;">Additional references:</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+			  
+              
+    <li class="toctree-l1 ">
+        <a class="toctree-l1-a " href="capabilities/">Capabilities</a>
+		
+    </li>
+
+			  
+            </ul>
+          </div>
+          &nbsp;
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+           
+          <div class="wy-nav-content">
+            <div class="rst-content">
+              <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Overview</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+              <div role="main">
+                <div class="section">
+                <div class="file-format">
+                 <div class="leftAlign" style="float: left;visibility: hidden;">
+                  </div>
+                  <div class="rightAlign" style="float: right;">
+                      <span>Download full document:</span>
+                      <ul class="file-types">
+                        <li><a style="border: 1px solid #EE3D24;padding: 5px;font-size: 11px;color: #EE3D24;border-radius: 5px;font-weight: 700">PDF</a></li>
+                        <li><a style="border: 1px solid #2A579A;padding: 5px;font-size: 11px;color: #2A579A;border-radius: 5px;font-weight: 700">DOCX</a></li>
+                        <li><a style="border: 1px solid #495164;padding: 5px;font-size: 11px;color: #495164;border-radius: 5px;font-weight: 700">EMAIL</a></li>
+                        <li><a style="border: 1px solid #495164;padding: 5px;font-size: 11px;color: #495164;border-radius: 5px;font-weight: 700">PRINT</a></li>
+                      </ul>
+                  </div>
+                  </div>
+                   <h1 id="hdx-sdk-for-citrix-receiver-for-chrome"><a class="toclink" href="#hdx-sdk-for-citrix-receiver-for-chrome">HDX SDK for Citrix Receiver for Chrome</a></h1>
+<p>Citrix Receiver for Chrome introduces an API (Experimental API) that allow third-party Chrome apps to lock, unlock and disconnect from a XenApp and XenDesktop session. Using this API, Citrix Receiver for Chrome can be launched in both embedded mode and KIOSK mode. Sessions launched in embedded mode function  in ways similar to sessions launched KIOSK mode.</p>
+<p>Sessions launched in embed mode functions in ways similar to sessions launched in KIOSK mode. </p>
+<div class="admonition danger">
+<p class="admonition-title">Important<p>This feature has been verified with the launch of a single app or desktop only.</p>
+</p>
+</div>
+<h2 id="prerequisites"><a class="toclink" href="#prerequisites">Prerequisites</a></h2>
+<p>Citrix Receiver for Chrome supports only the whitelisted third-party Chrome apps. You can whitelist a third-party Chrome app by adding the policy file for Citrix Receiver for Chrome using Chrome management settings</p>
+<p>To whitelist a third-party Chrome app, do the following: </p>
+<ol>
+<li>
+<p>Install the latest version of Citrix Receiver for Chrome. See Citrix downloads page for details.</p>
+</li>
+<li>
+<p>Whitelist the third-party Chrome app by adding the policy file for Citrix Receiver for Chrome using Chrome management settings.</p>
+</li>
+</ol>
+<p>The sample policy.txt file to whitelist the third-party Chrome app is as below:</p>
+<div class="codehilite"><pre><span></span>{
+    &quot;settings&quot;: {
+
+         &quot;Value&quot;: {
+
+             &quot;settings_version&quot;: &quot;1.0&quot;,
+
+             &quot;store_settings&quot;: {
+
+                    &quot;externalApps&quot;: [“&lt;3rdParty_App1_ExtnID&gt;”,“&lt;3rdParty_App2_ExtnID&gt;”]
+
+
+            }
+
+
+        }
+
+
+    }
+
+
+}
+</pre></div>
+
+
+<div class="admonition tip">
+<p class="admonition-title">Note<p>&lt;3rdParty_App1_ExtnID&gt; is used as an example for the name of externalApps and can send messages to Citrix Receiver for Chrome. Get your appid from the <code>chrome://extensions</code> site.</p>
+</p>
+</div>
+<h2 id="additional-references"><a class="toclink" href="#additional-references">Additional references:</a></h2>
+<p>Citrix Receiver for Chrome uses message communication provided by Chrome OS. For more details, see the following links:</p>
+<ul>
+<li><a href="https://developer.chrome.com/apps/tags/appview">https://developer.chrome.com/apps/tags/appview</a> </li>
+<li><a href="https://developer.chrome.com/extensions/runtime#event-onMessageExternal">https://developer.chrome.com/extensions/runtime#event-onMessageExternal</a> </li>
+<li><a href="https://developer.chrome.com/extensions/runtime#method-sendMessage">https://developer.chrome.com/extensions/runtime#method-sendMessage</a></li>
+<li>For more details, see Manage Chrome Apps by organizational unit on Google support.  </li>
+<li>For more information on whitelisting, see <a href="https://support.google.com/chrome/a/answer/6177431?hl=en">https://support.google.com/chrome/a/answer/6177431?hl=en</a></li>
+</ul> 
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+    <!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span class="next"><a href="capabilities/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+  </body>
+
+</html>
+
+<!--
+MkDocs version : 0.16.1
+Build Date UTC : 2017-05-16 13:16:29
+-->
