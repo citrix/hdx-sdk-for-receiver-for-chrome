@@ -9,5 +9,5 @@ HDX SDK for Chrome provides APIs that lets third party chrome packaged apps to l
 3. Attach the events if required.
 4. Start the session by passing ICA.You can refer to StoreFront Web APIs to fetch ICA.
 
-Click [here]() to access full API documentation.
+Click [here](./namespace-receiver) to access full API documentation.
 

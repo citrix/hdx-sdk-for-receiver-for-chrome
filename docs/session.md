@@ -42,15 +42,15 @@ Registers the eventListener on the eventType.
     <td>Type of the event for which the listener needs to be attached. 
     	<p> Supported event types:</p> 
 		<ul>
-		<li>onConnection</li>
-		<li>onConnectionClosed</li>
-		<li>onURLRedirection </li>
-		<li>onError</li>
+		<li><a href="../../events#onconnection">onConnection</a></li>
+		<li><a href="../../events#onconnectionclosed">onConnectionClosed</a></li>
+		<li><a href="../../events#onurlredirection">onURLRedirection</a></li>
+		<li><a href="../../events#onerror">onError</a></li>
 	</td>
   </tr>
   <tr>
     <td><code> eventListener </code></td>
-    <td>eventListener </td> 
+    <td><a href="../../global#eventlistener">eventListener</a></td> 
     <td>Listener to handle the event.</td>
   </tr>
 </table>
@@ -96,7 +96,7 @@ Changes the resolution of the session.
 | Name | Type | Description |
 |---|---|---|
 | `bounds` |	Object	| Contain session resolution settings. |
-| `responseCallback` | responseCallback | Callback that handles the response. |
+| `responseCallback` | [responseCallback](./global/#responsecallback) | Callback that handles the response. |
 
 #### Properties
 
@@ -143,7 +143,7 @@ Disconnects the session.
 
 | Name | Type | Description |
 |---|---|---|
-| `responseCallback` | responseCallback	| Callback that handles the response. |
+| `responseCallback` | [responseCallback](./global/#responsecallback)	| Callback that handles the response. |
 
 ### (inner) hide(responseCallback)
 
@@ -153,7 +153,7 @@ Hides the session.
 
 | Name | Type | Description |
 |---|---|---|
-| `responseCallback` |	responseCallback | Callback that handles the response. |
+| `responseCallback` |	[responseCallback](./global/#responsecallback) | Callback that handles the response. |
 
 ### (inner) logoff(responseCallback)
 
@@ -163,7 +163,7 @@ Sends logoff to the session.
 
 | Name | Type | Description |
 |---|---|---|
-| `responseCallback` |	responseCallback	| Callback that handles the response. |
+| `responseCallback` |	[responseCallback](./global/#responsecallback)	| Callback that handles the response. |
 
 ### (inner) removeListener(eventType, eventListener)
 
@@ -183,15 +183,15 @@ Removes the eventListener on the eventType.
     <td>Type of the event for which the listener needs to be removed. 
     	<p> Supported event types:</p> 
 		<ul>
-		<li>onConnection</li>
-		<li>onConnectionClosed</li>
-		<li>onURLRedirection </li>
-		<li>onError</li>
+		<li><a href="../../events#onconnection">onConnection</a></li>
+		<li><a href="../../events#onconnectionclosed">onConnectionClosed</a></li>
+		<li><a href="../../events#onurlredirection">onURLRedirection</a></li>
+		<li><a href="../../events#onerror">onError</a></li>
 	</td>
   </tr>
   <tr>
     <td><code> eventListener </code></td>
-    <td>eventListener </td> 
+    <td><a href="../../global#eventlistener">eventListener</a></td> 
     <td>Listener to handle the event.</td>
   </tr>
 </table>
@@ -215,7 +215,7 @@ Sends a key combination to the session.
 | Name | Type | Description |
 |---|---|---|
 | `keys` | Array	| Array of strings with each one representing a key. Supported keys Alt, Control, Shift, ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Home, End, PageUp, PageDown, Backspace, Delete, F5, PrintScreen,Insert, Escape, Tab. |
-| `responseCallback` |	responseCallback	 | Callback that handles the response. |
+| `responseCallback` |	[responseCallback](./global/#responsecallback)	 | Callback that handles the response. |
 
 #### Examples
 
@@ -246,7 +246,7 @@ Shows the session.
 
 | Name | Type | Description |
 |---|---|---|
-| `responseCallback` |	responseCallback	 | Callback that handles the response. |
+| `responseCallback` |	[responseCallback](./global/#responsecallback)	 | Callback that handles the response. |
 
 ### (inner) start(launchData, responseCallback)
 
@@ -257,7 +257,7 @@ Starts the session.
 | Name | Type | Description |
 |---|---|---|
 | `launchData` |	Object |	Contains the type and value of ICA. |
-| `responseCallback` |	responseCallback | Callback that handles the response. |
+| `responseCallback` |	[responseCallback](./global/#responsecallback) | Callback that handles the response. |
 
 #### Properties
 

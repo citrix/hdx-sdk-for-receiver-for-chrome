@@ -25,15 +25,15 @@ Creates a new session and returns session instance through callback. Use session
 | Name | Type | Description |
 |---|---|---|
 | `id` | string	| Receiver for Chrome ID. For example, id of the store version is "haiffjcadagjlijoggckpgfnoeiflnem". |
-| `connectionParams` |	connectionParams	| Configuration options to create the session.|
-| `onSessionCreated` |	onSessionCreated | Callback containing the session object created. Signature sample: `function <function_name>(session_object){…}` |
+| `connectionParams` |	[connectionParams](./global/#connectionparams)	| Configuration options to create the session.|
+| `onSessionCreated` |	[onSessionCreated](./global/#onsessioncreated) | Callback containing the session object created. Signature sample: `function <function_name>(session_object){…}` |
 
 #### Throws
 
 Unable to create session object.
 ##### Type
 
-ReceiverError
+[ReceiverError](./receiver-error)
 
 #### Examples
 

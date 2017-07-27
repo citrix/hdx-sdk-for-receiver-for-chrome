@@ -2,6 +2,8 @@
 
 **Type Definitions**
 
+<a name="connectionparams"></a>
+
 ## connectionParams
 
 Configuration options to create the session.
@@ -101,7 +103,10 @@ Configuration options to create the session.
 	}
 ```	
 
-## eventListener(event)
+
+<a name="eventlistener"></a>
+
+## eventListener (event)
 
 Listener to handle the events.
 
@@ -134,15 +139,16 @@ Listener to handle the events.
 		<td>Object</td>
 		<td><p>Data as appropriate to the event triggered</p>
 			<ul>
-				<li>onConnection</li>
-				<li>onConnectionClosed</li>
-				<li>onURLRedirection</li>
-				<li>onError</li>
+				<li><a href="../../events#onconnection">onConnection</a></li>
+				<li><a href="../../events#onconnectionclosed">onConnectionClosed</a></li>
+				<li><a href="../../events#onurlredirection">onURLRedirection</a></li>
+				<li><a href="../../events#onerror">onError</a></li>
 			</ul>
 		</td>
 	</tr>
 </table>
 
+<a name="onsessioncreated"></a>
 
 ## onSessionCreated(sessionObject)
 
@@ -152,7 +158,7 @@ Callback having the session object created.
 
 | Name | Type | Description |
 |---|---|---|
-| `sessionObject` |	Session |	Session object to interact with the session like register and handle events, start and disconnect. |
+| `sessionObject` |	[Session](./session) |	Session object to interact with the session like register and handle events, start and disconnect. |
 
 ### Example
 
@@ -178,6 +184,8 @@ function sessionCreated(sessionObject) {
 	sessionObject.start(launchData,sessionResponseCallback);
 }
 ```
+
+<a name="responsecallback"></a>
 
 ## responseCallback(response)
 

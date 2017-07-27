@@ -1,5 +1,7 @@
 # Events
 
+<a name="onconnection"></a>
+
 ## onConnection
 
 To receive various states during the connection from client to server.
@@ -40,6 +42,7 @@ Sample event object generated for onConnection event.
 	}
 }
 ```
+<a name="onconnectionclosed"></a>
 
 ## onConnectionClosed
 
@@ -55,6 +58,7 @@ Sample event object generated for onConnectionClosed event.
 	"type" : "onConnectionClosed",
 }
 ```
+<a name="onerror"></a>
 
 ## onError
 
@@ -85,6 +89,8 @@ Sample event object generated for onError event.
 		}
 }
 ```
+<a name="onurlredirection"></a>
+
 ## onURLRedirection
 
 Raised when URL redirection is configured on server and when any URL is passed to the Receiver for Chrome engine to process. The message would contain the URL that is redirected to the client.
