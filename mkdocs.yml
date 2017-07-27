@@ -11,3 +11,9 @@ markdown_extensions:
 pages:
 - Overview: index.md
 - Capabilities: capabilities.md
+- Classes: 
+  - ReceiverError: receiver-error.md
+  - Session: session.md
+- Events: events.md
+- Namespace Receiver: namespace-receiver.md
+- Global: global.md
