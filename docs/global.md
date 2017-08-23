@@ -139,10 +139,10 @@ Listener to handle the events.
 		<td>Object</td>
 		<td><p>Data as appropriate to the event triggered</p>
 			<ul>
-				<li><a href="./events#onconnection">onConnection</a></li>
-				<li><a href="./events#onconnectionclosed">onConnectionClosed</a></li>
-				<li><a href="./events#onurlredirection">onURLRedirection</a></li>
-				<li><a href="./events#onerror">onError</a></li>
+				<li><a href="./events.md#onconnection">onConnection</a></li>
+				<li><a href="./events.md#onconnectionclosed">onConnectionClosed</a></li>
+				<li><a href="./events.md#onurlredirection">onURLRedirection</a></li>
+				<li><a href="./events.md#onerror">onError</a></li>
 			</ul>
 		</td>
 	</tr>
