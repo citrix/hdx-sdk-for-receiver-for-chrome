@@ -73,7 +73,7 @@ Sample event object generated for onError event.
 }
 ```
 
-## <a name="onurlredirection"></a>on URLRedirection
+## <a name="onurlredirection"></a>onURLRedirection
 
 Raised when URL redirection is configured on server and when any URL is passed to the Receiver for Chrome engine to process. The message would contain the URL that is redirected to the client.
 
