@@ -30,30 +30,10 @@ Registers the eventListener on the eventType.
 
 #### Parameters
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Type</th> 
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><code>eventType</code></td>
-    <td>String</td> 
-    <td>Type of the event for which the listener needs to be attached. 
-    	<p> Supported event types:</p> 
-		<ul>
-		<li><a href="../../events#onconnection">onConnection</a></li>
-		<li><a href="../../events#onconnectionclosed">onConnectionClosed</a></li>
-		<li><a href="../../events#onurlredirection">onURLRedirection</a></li>
-		<li><a href="../../events#onerror">onError</a></li>
-	</td>
-  </tr>
-  <tr>
-    <td><code> eventListener </code></td>
-    <td><a href="../../global#eventlistener">eventListener</a></td> 
-    <td>Listener to handle the event.</td>
-  </tr>
-</table>
+| Name | Type | Description |
+|---|---|---| 
+| `eventType` | String | Type of the event for which the listener needs to be attached. Supported event types: <br> - [onConnection](./events#onConnection) <br> - [onConnectionClosed](./events#onConnectionClosed) <br> - [onURLRedirection](./events#onURLRedirection) <br> - [onError](./events#onError) |
+| `eventListener` | [eventListener](./global#eventlistener) | Listener to handle the event |
 
 #### Example
 
@@ -94,9 +74,9 @@ Changes the resolution of the session.
 #### Parameters
 
 | Name | Type | Description |
-|---|---|---|
+|---|---|---| 
 | `bounds` |	Object	| Contain session resolution settings. |
-| `responseCallback` | [responseCallback](./global/#responsecallback) | Callback that handles the response. |
+| `responseCallback` |	[responseCallback](./global/#responsecallback) | Callback that handles the response. |
 
 #### Properties
 
@@ -106,7 +86,7 @@ Changes the resolution of the session.
 | `bounds.width` |	Number |	Width of the session specified in pixels. This value will be set only when autoresize is set to false. |
 | `bounds.height` |	Number | Height of the session specified in pixels. This value will be set only when autoresize is set to false. |
 
-#### Examples
+#### Examples 
 
 **Example 1:** To change resolution to fixed width and height.
 
@@ -124,6 +104,7 @@ sessionObject.changeResolution(bounds,fixedResolutionCallback);
 ```
 
 **Example 2:** To change the session resolution to match the size of appview element inside third party Chrome app or the window size.
+
 ```
 var bounds = {
 	"autoresize": true
@@ -135,16 +116,6 @@ function autoResizeCallback(response){
 sessionObject.changeResolution(bounds,autoResizeCallback);
 ```
 
-### (inner) disconnect(responseCallback)
-
-Disconnects the session.
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| `responseCallback` | [responseCallback](./global/#responsecallback)	| Callback that handles the response. |
-
 ### (inner) hide(responseCallback)
 
 Hides the session.
@@ -153,7 +124,7 @@ Hides the session.
 
 | Name | Type | Description |
 |---|---|---|
-| `responseCallback` |	[responseCallback](./global/#responsecallback) | Callback that handles the response. |
+| `responseCallback` | [responseCallback](./global/#responsecallback) | Callback that handles the response. |
 
 ### (inner) logoff(responseCallback)
 
@@ -163,7 +134,7 @@ Sends logoff to the session.
 
 | Name | Type | Description |
 |---|---|---|
-| `responseCallback` |	[responseCallback](./global/#responsecallback)	| Callback that handles the response. |
+| `responseCallback` | [responseCallback](./global/#responsecallback) | Callback that handles the response. |
 
 ### (inner) removeListener(eventType, eventListener)
 
@@ -171,30 +142,10 @@ Removes the eventListener on the eventType.
 
 #### Parameters
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Type</th> 
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><code>eventType</code></td>
-    <td>String</td> 
-    <td>Type of the event for which the listener needs to be removed. 
-    	<p> Supported event types:</p> 
-		<ul>
-		<li><a href="../../events#onconnection">onConnection</a></li>
-		<li><a href="../../events#onconnectionclosed">onConnectionClosed</a></li>
-		<li><a href="../../events#onurlredirection">onURLRedirection</a></li>
-		<li><a href="../../events#onerror">onError</a></li>
-	</td>
-  </tr>
-  <tr>
-    <td><code> eventListener </code></td>
-    <td><a href="../../global#eventlistener">eventListener</a></td> 
-    <td>Listener to handle the event.</td>
-  </tr>
-</table>
+| Name | Type | Description |
+|---|---|---| 
+| `eventType` | String | Type of the event for which the listener needs to be attached. Supported event types: <br> - [onConnection](./events#onConnection) <br> - [onConnectionClosed](./events#onConnectionClosed) <br> - [onURLRedirection](./events#onURLRedirection) <br> - [onError](./events#onError) |
+| `eventListener` | [eventListener](./global#eventlistener) | Listener to handle the event |
 
 #### Example
 
@@ -206,6 +157,7 @@ function connectionHandler(eventObj){
 }
 sessionObject.removeListener("onConnection",connectionHandler);
 ```
+
 ### (inner) sendSpecialKeys(keys, responseCallback)
 
 Sends a key combination to the session.
@@ -230,7 +182,6 @@ sessionObject.sendSpecialKeys(keys,sendKeysCallback);
 ```
 
 **Example 2:** To preview different apps running inside session, Ctrl+alt+tab can be sent.
-
 ```
 function sendKeysCallback(response){
 	 console.log("sendSpecialKeys", response);
@@ -246,7 +197,7 @@ Shows the session.
 
 | Name | Type | Description |
 |---|---|---|
-| `responseCallback` |	[responseCallback](./global/#responsecallback)	 | Callback that handles the response. |
+| `responseCallback` | [responseCallback](./global/#responsecallback) | Callback that handles the response. |
 
 ### (inner) start(launchData, responseCallback)
 
@@ -256,19 +207,20 @@ Starts the session.
 
 | Name | Type | Description |
 |---|---|---|
-| `launchData` |	Object |	Contains the type and value of ICA. |
-| `responseCallback` |	[responseCallback](./global/#responsecallback) | Callback that handles the response. |
+| `launchData` | Object | Contains the type and value of the ICA |
+| `responseCallback` | [responseCallback](./global/#responsecallback) | Callback that handles the response. |
 
 #### Properties
 
-| Name | Type | Description |
+| Name	| Type | Description |
 |---|---|---|
-| `launchData.type` | String	| Specifies the data type of ICA data. Allowed values are "json" or "ini". |
-| `launchData.value` |	String	 | ICA data to start the session. It should be a JSON object when type is "json" or a string read from a .ini file when type is "ini". |
+| `launchData.type` | String | Specifies the data type of ICA data. Allowed values are "json" or "ini". |
+| `launchData.value` | String | ICA data to start the session. It should be a JSON object when type is "json" or a string read from a .ini file when type is "ini". |
 
 #### Examples
 
-**Example 1:** When ICA data is in JSON format.
+**Example 1:** When ICA data is in JSON format
+
 ```
 var icaObj = {
 	"ClientName":"Chrome-Receiver",
@@ -288,6 +240,7 @@ sessionObject.start(launchData,sessionResponseCallback);
 ```
 
 **Example 2:** When ICA data is in INI format.
+
 ```
 var launchData = {"type" :"ini",value :"<ica data in ini format>"};
 function sessionResponseCallback(response){
@@ -295,4 +248,3 @@ function sessionResponseCallback(response){
 }
 sessionObject.start(launchData,sessionResponseCallback);
 ```
-

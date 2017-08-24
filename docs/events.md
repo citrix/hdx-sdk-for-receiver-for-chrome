@@ -6,17 +6,17 @@ To receive various states during the connection from client to server.
 
 ### Type
 
-* object
+object
 
 ### Properties
 
 | Name | Type | Description |
-|----|----|----|
-| `state` | String | The various connection states are listed below: <br> - **connecting**: Raised when connection starts before displaying connection dialog. <br> - **connected**: Raised when connection is complete and when server and client start exchanging data. <br> - **sessionReady**: Raised when session is fully initialized, launched and ready for user interaction. |	
+|---|---|---|
+| `state` | String | The various connection states are listed below: <br> - **connecting**: Raised when connection starts before displaying connection dialog. <br> - **connected**: Raised when connection is complete and when server and client start exchanging data. <br> - **sessionReady**: Raised when session is fully initialized, launched and ready for user interaction. |
 
 ### Example
 
-Sample event object generated for onConnection event.
+Sample event object generated for `onConnection` event.
 
 ```
 {
@@ -34,7 +34,7 @@ Raised when the connection with the server is closed.
 
 ### Example
 
-Sample event object generated for onConnectionClosed event.
+Sample event object generated for onConnectionClosed event. 
 
 ```
 {
@@ -49,18 +49,18 @@ Raised on occurrence of any error in Citrix Receiver.
 
 ### Type
 
-* object
+object
 
 ### Properties
 
-| Name | Type | Description |
+| Name	| Type | Description |
 |---|---|---|
-| `id` | String |	String ID defined in <locale_file>.js. For example, en.js would be for English, ko.js for Korean etc., ID remains the same for all locales supported. |
-| `message` | String |	Localized error message for the key. Customer can provide custom string in  the language file to get meaningful error in the context of the deployment. |
+| `id`	| String | String ID defined in <locale_file>.js. For example, en.js would be for English, ko.js for Korean etc., ID remains the same for all locales supported. |
+| `message` | String |	Localized error message for the key. Customer can provide custom string in the language file to get meaningful error in the context of the deployment. |
 
 ### Example
 
-Sample event object generated for onError event.
+Sample event object generated for onError event. 
 
 ```
 {
@@ -73,23 +73,23 @@ Sample event object generated for onError event.
 }
 ```
 
-## <a name="onurlredirection"></a>onURLRedirection
+## <a name="onurlredirection"></a>on URLRedirection
 
 Raised when URL redirection is configured on server and when any URL is passed to the Receiver for Chrome engine to process. The message would contain the URL that is redirected to the client.
 
 ### Type
 
-* object
+object
 
 ### Properties
 
-| Name | Type | Description |
+| Name	| Type | Description |
 |---|---|---|
-| `url` |	String | The value of the url would contain the URL that is redirected to the client. |
+| `url` | String | The value of the URL would contain the URL that is redirected to the client |
 
 ### Example
 
-Sample event object generated for onURLRedirection event.
+Sample event object generated for onURLRedirection event
 
 ```
 {
@@ -100,7 +100,3 @@ Sample event object generated for onURLRedirection event.
 	}
 }
 ```
-
-| Name | Type | Description |
-|---|---|---|
-| `url` |	String | The value of the url would contain the URL that is redirected to the client. |
