@@ -1,8 +1,6 @@
 # Events
 
-<a name="onconnection"></a>
-
-## onConnection
+## <a name="onconnection"></a>onConnection
 
 To receive various states during the connection from client to server.
 
@@ -12,23 +10,10 @@ To receive various states during the connection from client to server.
 
 ### Properties
 
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td><code> state </code></td>
-		<td>String</td>
-		<td><p>The various connection states are listed below:</p>
-				<ul>
-					<li>connecting: Raised when connection starts before displaying connection dialog.</li>
-					<li>connected: Raised when connection is complete and when server and client start exchanging data.</li> 
-					<li>sessionReady: Raised when session is fully initialized, launched and ready for user interaction.</li> 
-				</ul></td></tr>
-<table>
-			
+| Name | Type | Description |
+|----|----|----|
+| `state` | String | The various connection states are listed below: <br> - **connecting**: Raised when connection starts before displaying connection dialog. <br> - **connected**: Raised when connection is complete and when server and client start exchanging data. <br> - **sessionReady**: Raised when session is fully initialized, launched and ready for user interaction. |	
+
 ### Example
 
 Sample event object generated for onConnection event.
@@ -42,9 +27,8 @@ Sample event object generated for onConnection event.
 	}
 }
 ```
-<a name="onconnectionclosed"></a>
 
-## onConnectionClosed
+## <a name="onconnectionclosed"></a>onConnectionClosed
 
 Raised when the connection with the server is closed.
 
@@ -58,9 +42,8 @@ Sample event object generated for onConnectionClosed event.
 	"type" : "onConnectionClosed",
 }
 ```
-<a name="onerror"></a>
 
-## onError
+## <a name="onerror"></a>onError
 
 Raised on occurrence of any error in Citrix Receiver.
 
@@ -89,9 +72,8 @@ Sample event object generated for onError event.
 		}
 }
 ```
-<a name="onurlredirection"></a>
 
-## onURLRedirection
+## <a name="onurlredirection"></a>onURLRedirection
 
 Raised when URL redirection is configured on server and when any URL is passed to the Receiver for Chrome engine to process. The message would contain the URL that is redirected to the client.
 
@@ -118,3 +100,7 @@ Sample event object generated for onURLRedirection event.
 	}
 }
 ```
+
+| Name | Type | Description |
+|---|---|---|
+| `url` |	String | The value of the url would contain the URL that is redirected to the client. |

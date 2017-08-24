@@ -119,36 +119,6 @@ Listener to handle the events.
 | `evebt.type` | String | Event type triggered |
 | `event.data` | Object | Data as appropriate to the event triggered <br><br> - [onConnection](./events#onConnection) <br> - [onConnectionClosed](./events#onConnectionClosed) <br> - [onURLRedirection](./events#onURLRedirection) <br> - [onError](./events#onError) |
 
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td><code>event.id</code></td>
-		<td>String</td>
-		<td>Id of the session object.</td>
-	</tr>
-	<tr>
-		<td><code>event.type</code></td>
-		<td>String</td>
-		<td>Event type triggered.</td>
-	</tr>
-	<tr>
-		<td><code>event.data</code></td>
-		<td>Object</td>
-		<td><p>Data as appropriate to the event triggered</p>
-			<ul>
-				<li><a href="./events#onconnection">onConnection</a></li>
-				<li><a href="./events#onconnectionclosed">onConnectionClosed</a></li>
-				<li><a href="./events#onurlredirection">onURLRedirection</a></li>
-				<li><a href="./events#onerror">onError</a></li>
-			</ul>
-		</td>
-	</tr>
-</table>
-
 
 ## <a name="onsessioncreated"></a>onSessionCreated(sessionObject)
 
