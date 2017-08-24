@@ -2,9 +2,7 @@
 
 **Type Definitions**
 
-<a name="connectionparams"></a>
-
-## connectionParams
+## <a name="connectionparams"></a>connectionParams
 
 Configuration options to create the session.
 
@@ -103,10 +101,7 @@ Configuration options to create the session.
 	}
 ```	
 
-
-<a name="eventlistener"></a>
-
-## eventListener (event)
+## <a name="eventlistener"></a>eventListener (event)
 
 Listener to handle the events.
 
@@ -117,6 +112,12 @@ Listener to handle the events.
 | `event` |	Object |	Object as appropriate to the `eventType` registered. |
 
 ### Properties
+
+| Name | Type | Description |
+|---|---|---| 
+| `event.id` | String | ID of the session object |
+| `evebt.type` | String | Event type triggered |
+| `event.data` | Object | Data as appropriate to the event triggered <br> - [onConnection](./events#onConnection) <br> - on
 
 <table>
 	<tr>
@@ -139,18 +140,17 @@ Listener to handle the events.
 		<td>Object</td>
 		<td><p>Data as appropriate to the event triggered</p>
 			<ul>
-				<li><a href="./events.md#onconnection">onConnection</a></li>
-				<li><a href="./events.md#onconnectionclosed">onConnectionClosed</a></li>
-				<li><a href="./events.md#onurlredirection">onURLRedirection</a></li>
-				<li><a href="./events.md#onerror">onError</a></li>
+				<li><a href="./events#onconnection">onConnection</a></li>
+				<li><a href="./events#onconnectionclosed">onConnectionClosed</a></li>
+				<li><a href="./events#onurlredirection">onURLRedirection</a></li>
+				<li><a href="./events#onerror">onError</a></li>
 			</ul>
 		</td>
 	</tr>
 </table>
 
-<a name="onsessioncreated"></a>
 
-## onSessionCreated(sessionObject)
+## <a name="onsessioncreated"></a>onSessionCreated(sessionObject)
 
 Callback having the session object created.
 
