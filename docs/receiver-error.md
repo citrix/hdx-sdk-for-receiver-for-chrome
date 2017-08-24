@@ -6,7 +6,7 @@
 
 ## Members
 
-### `(static) this.description`
+### (static) this.description
 
 #### Properties
 
@@ -14,7 +14,7 @@
 |---|---|---|
 | `description` | String |	Description of the error. |
 
-### `(static) this.type`
+### (static) this.type
 
 #### Properties
 
