@@ -117,7 +117,7 @@ Listener to handle the events.
 |---|---|---| 
 | `event.id` | String | ID of the session object |
 | `evebt.type` | String | Event type triggered |
-| `event.data` | Object | Data as appropriate to the event triggered <br><br> - [onConnection](./events#onConnection) <br> - [onConnectionClosed](./events#onConnectionClosed) <br> - [onURLRedirection](./events#onURLRedirection) <br> - [onError](./events#onError) |
+| `event.data` | Object | Data as appropriate to the event triggered <br><br> - [onConnection](./events#onconnection) <br> - [onConnectionClosed](./events#onconnectionclosed) <br> - [onURLRedirection](./events#onurlredirection) <br> - [onError](./events#onerror) |
 
 
 ## <a name="onsessioncreated"></a>onSessionCreated(sessionObject)

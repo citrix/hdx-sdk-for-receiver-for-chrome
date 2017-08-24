@@ -32,7 +32,7 @@ Registers the eventListener on the eventType.
 
 | Name | Type | Description |
 |---|---|---| 
-| `eventType` | String | Type of the event for which the listener needs to be attached. Supported event types: <br> - [onConnection](./events#onConnection) <br> - [onConnectionClosed](./events#onConnectionClosed) <br> - [onURLRedirection](./events#onURLRedirection) <br> - [onError](./events#onError) |
+| `eventType` | String | Type of the event for which the listener needs to be attached. Supported event types: <br> - [onConnection](./events#onconnection) <br> - [onConnectionClosed](./events#onconnectionclosed) <br> - [onURLRedirection](./events#onurlredirection) <br> - [onError](./events#onerror) |
 | `eventListener` | [eventListener](./global#eventlistener) | Listener to handle the event |
 
 #### Example
@@ -144,7 +144,7 @@ Removes the eventListener on the eventType.
 
 | Name | Type | Description |
 |---|---|---| 
-| `eventType` | String | Type of the event for which the listener needs to be attached. Supported event types: <br> - [onConnection](./events#onConnection) <br> - [onConnectionClosed](./events#onConnectionClosed) <br> - [onURLRedirection](./events#onURLRedirection) <br> - [onError](./events#onError) |
+| `eventType` | String | Type of the event for which the listener needs to be attached. Supported event types: <br> - [onConnection](./events#onconnection) <br> - [onConnectionClosed](./events#onconnectionclosed) <br> - [onURLRedirection](./events#onurlredirection) <br> - [onError](./events#onerror) |
 | `eventListener` | [eventListener](./global#eventlistener) | Listener to handle the event |
 
 #### Example
